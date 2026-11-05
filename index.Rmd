@@ -8,7 +8,7 @@ output: html_document
 #Welcome to James Maxwell Videos, a video platform focused on telling stories of those who keep New York City going
 
 * Learn more [about](about.html) the project and me
-* View my [credentials](resume.html)
+* View my [credentials](credentials.html)
 * Explore my [most recent adventures in the city](videos.html)
 
 

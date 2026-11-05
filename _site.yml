@@ -12,7 +12,7 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:jamesmaxwellvideos@gmail.com
     - icon: fa-linkedin fa-lg
-      href: https://www.linkedin.com/in/YOUR_LINKEDIN/
+      href: https://www.linkedin.com/in/max-dooley3412
 output:
   html_document:
     theme: cerulean

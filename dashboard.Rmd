@@ -30,7 +30,6 @@ noaa =
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-
 ### Daily max vs. min temperature (°C) for each month (Scatterplot)
 
 ```{r}

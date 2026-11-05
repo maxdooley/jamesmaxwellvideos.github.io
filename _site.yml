@@ -1,0 +1,16 @@
+name: "James Maxwell Videos"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about.html
+    - text: "Videos"
+      href: videos.html
+    - icon: fa-envelope fa-lg
+      href: mailto:jamesmaxwellvideos@gmail.com
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/YOUR_LINKEDIN/
+output:
+  html_document:
+    theme: cerulean

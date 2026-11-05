@@ -1,0 +1,14 @@
+---
+title: "about.rmd"
+author: "Max"
+date: "2026-11-05"
+output: html_document
+---
+
+Established in 2026, started out as an idea a couple years ago to really experience New York City. There's so many different corners that can be so easily overlooked. 
+
+These videos allow for others to be exposed to stories that can pique interest and ideas, encouraaging others to pursue their own ideas. Don't just be a listener.
+
+Follow along to learn more!
+
+

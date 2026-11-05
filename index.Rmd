@@ -1,0 +1,16 @@
+---
+title: "James Maxwell Videos"
+author: "Max"
+date: "2026-11-05"
+output: html_document
+---
+
+#Welcome to James Maxwell Videos, a video platform focused on telling stories of those who keep New York City going
+
+
+*Learn more [about] (about.html) the project and me
+*View my [credentials] (resume.html)
+*Explore my [Most recent adventures in the city]
+
+
+

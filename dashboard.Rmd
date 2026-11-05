@@ -22,6 +22,8 @@ library(flexdashboard)
 
 data("ny_noaa")
 
+ny_noaa
+
 noaa =
   ny_noaa |>
   separate(date, into = c("year", "month", "day"), sep = "-") |>
@@ -35,7 +37,7 @@ Column {data-width=650}
 -----------------------------------------------------------------------
 
 
-# Daily max vs. min temperature (°C)
+# Daily max vs. min temperature (°C) for each month (Scatterplot)
 
 ```{r}
 noaa |>
@@ -48,3 +50,14 @@ noaa |>
 
 Column {data-width=350}
 -----------------------------------------------------------------------
+
+#Days when it rained each month (Bar Chart)
+
+```{r}
+noaa |>
+  filter(prcp > 0) |>
+  count(month) |>
+  plot_ly(x = ~month, y = ~n, color = ~month, type = "bar", colors = "viridis")
+```
+
+

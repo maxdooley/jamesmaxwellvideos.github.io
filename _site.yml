@@ -9,6 +9,8 @@ navbar:
       href: videos.html
     - text: "Credentials"
       href: credentials.html
+    - text: "Dashboard"
+      href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:jamesmaxwellvideos@gmail.com
     - icon: fa-linkedin fa-lg

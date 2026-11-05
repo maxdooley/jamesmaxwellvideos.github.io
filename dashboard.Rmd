@@ -1,0 +1,35 @@
+---
+title: "dashboard"
+author: "Max"
+date: "2026-11-05"
+output: html_document
+---
+#Flexdashboard...kinda unrelated to my website
+
+---
+title: "NY NOAA Weather, 2003. I was born then."
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+library(flexdashboard)
+
+data("ny_noaa")
+
+noaa =
+  ny_noaa |>
+  separate(date, into = c("year", "month", "day"), sep = "-") |>
+  filter(year == "2003") |>
+  mutate(
+    tmax = as.numeric(tmax) / 10,
+    tmin = as.numeric(tmin) / 10)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------

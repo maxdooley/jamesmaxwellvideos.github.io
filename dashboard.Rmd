@@ -1,18 +1,12 @@
 ---
-title: "dashboard"
-author: "Max"
-date: "2026-11-05"
-output: html_document
----
-#Flexdashboard...kinda unrelated to my website
-
----
 title: "NY NOAA Weather, 2003. I was born then."
 output:
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
 ---
+
+###Flexdashboard...kinda unrelated to my website
 
 ```{r setup, include=FALSE}
 library(tidyverse)
@@ -37,7 +31,7 @@ Column {data-width=650}
 -----------------------------------------------------------------------
 
 
-# Daily max vs. min temperature (°C) for each month (Scatterplot)
+### Daily max vs. min temperature (°C) for each month (Scatterplot)
 
 ```{r}
 noaa |>
@@ -51,13 +45,20 @@ noaa |>
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-#Days when it rained each month (Bar Chart)
+### Days when it rained each month (Bar Chart)
 
 ```{r}
 noaa |>
   filter(prcp > 0) |>
   count(month) |>
   plot_ly(x = ~month, y = ~n, color = ~month, type = "bar", colors = "viridis")
+```
+### Daily low temp for each month (Box plot)
+
+```{r}
+noaa |>
+  drop_na(tmin) |>
+  plot_ly(x = ~month, y = ~tmin, color = ~month, type = "box", colors = "viridis")
 ```
 
 

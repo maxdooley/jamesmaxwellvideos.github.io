@@ -33,3 +33,18 @@ noaa =
 
 Column {data-width=650}
 -----------------------------------------------------------------------
+
+
+# Daily max vs. min temperature (°C)
+
+```{r}
+noaa |>
+  drop_na(tmax, tmin) |>
+  mutate(text_label = str_c("Station: ", id, "\nMonth: ", month)) |>
+  plot_ly(
+    x = ~tmin, y = ~tmax, type = "scatter", mode = "markers",
+    color = ~month, text = ~text_label, alpha = 0.5, colors = "viridis")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------

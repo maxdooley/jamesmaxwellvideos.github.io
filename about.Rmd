@@ -1,5 +1,5 @@
 ---
-title: "about.rmd"
+title: "About"
 author: "Max"
 date: "2026-11-05"
 output: html_document
